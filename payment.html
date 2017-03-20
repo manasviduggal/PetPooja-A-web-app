@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PetPooja-Payment Gateway </title>
+<link rel="shortcut icon" type="image/jpg" href="chef.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <script src="jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function f()
+{
+  if( document.myForm.cardno.value == "" )
+{  alert( "Please provide card number!" );    
+   document.myForm.cardno.focus() ;  return false;   }
+   
+if( document.myForm.name.value == "" )
+{  alert( "Please provide holder name!" );    
+   document.myForm.name.focus() ;  return false;   }
+   
+if( document.myForm.expiry.value == "" )
+{  alert( "Please provide expiry date of card!" );    
+   document.myForm.expiry.focus() ;  return false;   }
+   
+ var d= document.getElementById('d');  
+ if (!d.value.match(/^(0[1-9]|1[012])\-[0-9]{4}/)) {
+      alert("Expiry entered must be in Format MM-YYYY ");
+      return false;
+   }
+   
+if( document.myForm.cvv.value == "" )
+{  alert( "Please provide cvv !" );    
+   document.myForm.cvv.focus() ;  return false;   }
+	return true;
+}	
+</script>	
+	
+	
+</head>
+<body>
+	<div id="headwrap">
+		<div id="header">
+			<div id="img">
+				<img src="logo.png" id="logo" alt="" onclick="document.location.href = 'my.html'" />
+                <div class="btn-group">
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'my.html'">My Profile<</button>
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'r1.html'">Know us </button>
+               
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'rview1.html'">Restaurants</button>
+                
+                 <button type="button" class="btn btn-danger" onclick="document.location.href = 'contactus1.html'">Contact us</button>
+                
+                 <button type="button" class="btn btn-danger" onclick="document.location.href = 'my.html'">Logout</button>
+			</div>
+            </div>
+		</div>
+                
+  </div>
+</div>
+		<div id="contentwrap">
+		<div id="content1">
+            <div id="payment" align="center">
+			 <br>
+			 <img src="securepayment.jpg" id="logo" align="center"/>
+             <h3 align="center"><strong>Payment Gateway<strong></h3><br><br>
+             <form name="myForm" action="order.php" method="post" align="center"> <br>
+             <table align="center">
+             <tr><td align="center">Card No.</td>
+             <td><input type="text" placeholder="Enter card number" name="cardno"/></td></tr>
+             <tr><td align="center">Holder</td><td> <input type="text" placeholder="Enter holder name" name="holder"/></td></tr>
+             <tr><td align="center">Expiry Date</td><td><input type="text" placeholder="Enter expiry date MM-YYYY" name="expiry" id="d"/></td></tr>
+             <tr><td align="center">CVV</td><td><input type= "password" placeholder="Enter cvv" name="cvv"/></td></tr>
+             <tr><td></td><td align="center"><input type="submit"  value="    Pay    " onclick="return(f());"/></td></tr>
+
+             </table>
+
+            </form>
+			
+			<br>
+			<br><p><I> This  payment  is  being  made  through  a  highly  secure  channel</I></p>
+			<br>
+            
+            <footer>
+                   <img src="allsecure.jpg" id="logo" align="center"/>
+             </footer>
+
+            </div>        
+            </div>
+             </div>
+        </div>
+       
+    
+	
+	<div id="footerwrap">
+		<div id="footer">
+        <br><br>
+<font size="3" color="white"><center>   &copy Copyright 2015 PetPooja.All Rights Reserved.<a href="https://www.facebook.com/PetPoojaPage"> <span class="social social-facebook"><img src="icon.png" width="40px" height="40px" align="center-right"/></span></a>
+<a href="https://twitter.com/petpooja_rest"> <span class="social social-twitter"><img src="icon_t.png" width="40px"  height="40px" align="center-right"/></span></a>
+<a href="https://plus.google.com/106127621676106204749/about"> <span class="social social-googleplus"><img src="gp1.png" width="40px"  height="40px" align="center-right"/></span></a></center></font>
+		</div>
+	</div>
+</body>
+</html>

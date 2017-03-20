@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PetPooja-Contact us!</title>
+<link rel="shortcut icon" type="image/jpg" href="chef.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <script src="jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function f()
+{
+ 	if( document.myForm.name.value == "" )
+  {  alert( "Please provide name!" );    
+   document.myForm.name.focus() ;  return false;   }
+   
+   if( document.myForm.id.value == "" )
+  {  alert( "Please provide email!" );    
+   document.myForm.id.focus() ;  return false;   }
+   
+  var p=document.getElementById('ph');
+
+   	if(!p.value.match(/^[0-9]{10}/))
+	  {alert( "Please provide enter valid 10 digit phone no.!" );    
+   document.myForm.phone.focus() ;  return false;   }
+   
+   if( document.myForm.Remarks.value == "" )
+  {  alert( "Please provide some remarks!" );    
+   document.myForm.Remarks.focus() ;  return false;   }
+   return true;
+}	
+</script>
+</head>
+<body
+	<div id="headwrap">
+		<div id="header">
+			<div id="img">
+				<img src="logo.png" id="logo" alt="" onclick="document.location.href = 'profile.html'" />
+                <div class="btn-group">
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'my.html'">Home</button>
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'r.html'">Know us </button>            
+                <button type="button" class="btn btn-danger" onclick="document.location.href = 'rview.html'">Restaurants</button>
+                 <button type="button" class="btn btn-danger" onclick="document.location.href = 'contactus.html'">Contact us</button>
+               
+			</div>
+            </div>
+		</div>
+                
+  </div>
+
+		<div id="contentwrap">
+		<div id="content" >
+        <div id="lefty">
+        <img src="phone2.png" id="contact" alt="" size="10px" />
+        <font size="7" color="yellow" face='"impact", cursive, sans-serif' align="bottom"> Contact Us</font>
+        <br>
+        <font size="4" color="white" face='"Tahoma", Geneva, sans-serif' align="left" > <br>Block A , Building Number A-5<br>Outer-Circle,<br>Connaught Place<br>New Delhi-110001 </font>
+        <br><br>
+        <font size="4" color="white" face='"Tahoma", Geneva, sans-serif' align="left" ><i><strong> Email id :</i></strong> petpooja_delhi@gmail.com</font>
+        <br><br>
+        <font size="4" color="white" face='"Tahoma", Geneva, sans-serif' align="left" > <i><strong>Contact Number :</i></strong> 011-22227584,011-22227585</font>
+        <br>
+        <br>
+        <br>
+        <div align="center">
+        <img src="chef.jpg" width="200px" height="200px"  />
+        </div>
+        </div>
+        
+        
+        <div id="righty">
+        <form name="myForm" action="some.php" method="post"  style ="width:250px">
+                    <li><label style="color:white;font-size:20px">Name:</label></li>
+					<li><input id="lid" type="text" placeholder="Enter your name" name="name" class="form-control">
+					</input></li>
+                    <br>
+					<li><label style="color:white;font-size:20px">Email id:</label></li>
+					<li><input id="lid" type="email" placeholder="Enter your Email id" name="id" class="form-control">
+					</input></li>
+                    <br>
+                   <li><label style="color:white;font-size:20px">Contact No.:</label></li>
+					<li><input id="ph" type="text" placeholder="Enter Contact No." name="phone" class="form-control">
+					</input></li>
+                    <br>
+                    <li><label style="color:white;font-size:20px">Remarks:</label></li>
+                    <textarea name="Remarks" rows="5" col="15"  placeholder="write remarks"></textarea> 
+                    <br><br>
+                     <button type="reset" class="btn btn-default btn-md">Reset</button>
+                     <button type="submit" class="btn btn-default btn-md" onclick="return(f());">Submit</button>
+                      <br>
+          </form>
+	    </div>
+        </div>
+    </div>
+	
+	<div id="footerwrap">
+		<div id="footer">
+        <br><br>
+<font size="3" color="white"><center>   &copy Copyright 2015 PetPooja.All Rights Reserved.<a href="https://www.facebook.com/PetPoojaPage"> <span class="social social-facebook"><img src="icon.png" width="40px" height="40px" align="center-right"/></span></a>
+<a href="https://twitter.com/petpooja_rest"> <span class="social social-twitter"><img src="icon_t.png" width="40px"  height="40px" align="center-right"/></span></a>
+<a href="https://plus.google.com/106127621676106204749/about"> <span class="social social-googleplus"><img src="gp1.png" width="40px"  height="40px" align="center-right"/></span></a></center></font>
+		</div>
+	</div>
+</body>
+</html>

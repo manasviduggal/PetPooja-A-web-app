@@ -1,0 +1,217 @@
+body{
+margin:0;
+padding:0;
+}
+
+#headwrap{
+width:100%;
+height:85px;
+background-color:black;
+}
+
+#contentwrap{
+width:100%;
+height:650px;
+background-color:black;
+}
+#contentwrap2{
+width:100%;
+height:780px;
+background-color:black;
+}
+
+#footerwrap{
+width:100%;
+height:100px;
+background-color:black;
+}
+
+#header{
+margin:0 auto;
+width: 90%;
+height:85px;
+background-color:black;
+}
+
+#content{
+margin:0 auto;
+width:90%;
+height:650px;
+background-color:brown;
+}
+#content1{
+margin:0 auto;
+width:90%;
+height:650px;
+background-color:white;
+}
+#content2{
+margin:0 auto;
+width:90%;
+height:780px;
+background-color:brown;
+}
+#content3{
+margin:0 auto;
+width:90%;
+height:650px;
+background-color:brown;
+padding-top:10px;
+padding-left:50px;
+padding-right:50px;
+}
+
+#rleft{
+height:650px;
+width:65%;
+float:left;
+overflow:hidden;
+background-color:white;
+}
+#rleft2{
+height:650px;
+width:65%;
+float:left;
+overflow:hidden;
+background-color:white;
+padding-right:15px;
+}
+
+#rhead{
+height:70px;
+width:100%;
+padding-top:5px;
+padding-left:15px;
+padding-right:15px;
+background-color:#FFFFCC;
+}
+
+#rright{
+height:650px;
+width:35%;
+float:left;
+padding-left:20px;
+padding-right:20px;
+overflow:scroll;
+}
+
+#frm{
+
+list-style-type: none;
+
+}
+
+#footer{
+margin:0 auto;
+width:90%;
+height:100px;
+background-color:black;
+}
+
+#logo{
+height:84px;
+width:355px;
+}
+
+#s{
+height:500px;
+width:400px;
+}
+#createaccount{
+margin:0 auto;
+list-style-type: none;
+padding:15px;
+height:610px;
+width:1020px;
+background-color:brown;
+border:1px solid brown;
+border-radius:7px;
+}
+
+#createaccount1{
+margin:0 auto;
+list-style-type: none;
+padding:15px;
+height:650px;
+width:1020px;
+background-color:brown;
+border:1px solid brown;
+
+}
+
+#left-side{
+height:650px;
+width:50%;
+float:left;
+background-image: url("collage.jpg");
+}
+#lefty{
+height:650px;
+padding-top:20px;
+padding-left:50px;
+width:50%;
+float:left;
+}
+
+#righty{
+list-style-type: none;
+height: 650px;
+width:50%;
+float :left;
+background-color:brown;
+padding:60px;
+padding-left: 140px;
+}
+
+#right-side{
+height:650px;
+width:50%;
+float:left;
+background-color:brown;
+}
+
+#login{
+margin:0 auto;
+list-style-type: none;
+padding: 15px;
+margin-top:110px;
+height:400px;
+width:355px;
+background-color:black;
+border:1px solid #282828;
+border-radius:7px;
+}
+
+#contact{
+height:75px;
+width:90px;
+}
+
+#about{
+margin:0 auto;
+margin-top:10px;
+padding:10px;
+list-style-type: none;
+height:100px;
+width:300px;
+}
+
+#payment{
+margin:0 auto;
+margin-top:0px;
+padding:10px;
+list-style-type: none;
+height:100px;
+width:400px;
+background-color:white;
+}
+
+#bar{
+padding-left:50px;
+padding-right:50px;
+}
+
+#stat{
+padding-left:50px;
+padding-right:50px;
+}
